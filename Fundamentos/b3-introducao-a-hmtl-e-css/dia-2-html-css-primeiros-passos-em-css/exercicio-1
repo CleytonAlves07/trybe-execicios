@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cleyton de Araújo Alves</title>
+</head>
+<body>
+    <h1 id="nome">Cleyton de Araújo Alves</h1>
+    <img src="Foto-perfil.jpeg" alt="Foto perfil de Cleyton Alves" width="200px" id="fotoPerfil">
+    <br>
+    <p id="ocupacao">Estudante de Desenvolvimento Web na Trybe</p>
+    <br><br>
+    <p id="texto">Me apaixonei pelo mundo da <strong><em>programação</em></strong> e hoje tenho a meta de aprender um pouco mais a cada dia e sempre que possível compartilhar essa minha nova paixão!</p>
+    <p id="localidade">Sou de <strong><em>Recife</em></strong>, a capital do frevo,dos naufrágios e a capital de <strong><em>Pernambuco</em></strong>.</p>
+    <br><br>
+    <p id="habilidades">Minhas habilidades são:
+        <ul>
+            <li color="green"><strong><em>Comunicação</em></strong></li>
+            <br>
+            <li>Dedicação</li>
+            <br>  
+            <li color="green"><strong><em>Empatia</em></strong></li>
+            <br>
+            <li>Comprometimento</li>
+        </ul>   
+    </p>
+    <br><br><br>
+    <a href="#fotoPerfil">Clique aqui - Foto perfil</a>
+    <br><br>
+    <a href="http://www.tecmundo.com.br/blog" target="_blank">Acesse o blog TecMundo</a>
+    <br>
+    <ul>
+        <li><a href="#nome">Nome</a></li>
+        <br>
+        <li><a href="#ocupacao">Ocupação</a></li>
+        <br>
+        <li><a href="#texto">Apresentação</a></li>
+        <br>
+        <li><a href="#localidade">Localidade</a></li>
+        <br>
+        <li><a href="#habilidade">Habilidades</a></li>
+    </ul>
+</body>
+</html>
