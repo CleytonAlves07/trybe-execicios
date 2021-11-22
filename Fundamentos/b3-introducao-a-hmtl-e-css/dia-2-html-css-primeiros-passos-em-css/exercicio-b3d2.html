@@ -6,15 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML</title>
     <style>
+        body {
+            font-size: 16px;
+        }
         h1 {
             font-size: 65px;
             color: orange;
+            font-family: sans-serif;
         }
         ul {
             background-color: gray;
         }
+        p {
+            font-weight: 600px;
+            font-size: 48px;
+            font-style: italic;
+            line-height: 50px;
+            text-align: center;
+        }
         .words {
             background-color: rgb(55, 205, 225);
+        }
+        #yellow {
+            background-color: yellow;
+        }
+        #red {
+            background-color: red;
+        }
+        #brown {
+            background-color: brown;
         }
     </style>
 </head>
@@ -22,9 +42,9 @@
    <h1>Exercícios 3.2</h1>
    <p class="words">Qual é a sua cor favorita?</p>
    <ul class="words">
-       <li>Amarelo</li>
-       <li>Vermelho</li>
-       <li>Marrom</li>
+       <li id="yellow">Amarelo</li>
+       <li id="red">Vermelho</li>
+       <li id="brown">Marrom</li>
    </ul>
 </body>
 </html>
