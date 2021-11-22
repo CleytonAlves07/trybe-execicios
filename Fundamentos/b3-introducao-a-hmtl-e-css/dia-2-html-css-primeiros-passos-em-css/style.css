@@ -1,0 +1,46 @@
+<style>
+        body {
+            font-size: 16px;
+            font-family: fantasy;
+        }
+        h1 {
+            font-size: 65px;
+            color: orange;
+            text-align: center;
+        }
+        ul {
+            background-color: gray;
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            width: 100px;
+            margin: 0 50% 0 50%;
+            
+        }
+        p {
+            font-weight: 600px;
+            font-size: 3em;
+            font-style: italic;
+            line-height: 50px;
+            text-align: center;
+            font-weight: bold;
+            border-radius: 15px;
+            width: 550px;
+            
+            
+        }
+        .words {
+            background-color: rgb(55, 205, 225);
+            
+            
+        }
+        #yellow {
+            background-color: yellow;
+        }
+        #red {
+            background-color: red;
+        }
+        #brown {
+            background-color: brown;
+        }
+    </style>
