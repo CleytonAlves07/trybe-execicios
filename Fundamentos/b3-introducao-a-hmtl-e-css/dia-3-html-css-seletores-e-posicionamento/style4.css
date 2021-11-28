@@ -1,0 +1,37 @@
+div:hover {
+    border: solid 1px red;
+}
+#primaria {
+    color: tomato;
+}
+#hprimaria {
+    font-family:monospace;
+}
+#secundaria {
+    color: goldenrod;
+}
+#hsecundaria {
+    font-style: bold;
+}
+#complementar {
+    color: salmon;
+    font-size: 2em;    
+}
+#hcomplementar {
+    text-indent: 155px;
+}
+#escura {
+    color: darkblue;
+}
+#hescura {
+    font-size: x-large;
+}
+#clara {
+    color: rgb(166, 208, 245);
+}
+#hclara {
+    font-variant: small-caps;
+}
+.impares {
+    font-style: italic;
+}
