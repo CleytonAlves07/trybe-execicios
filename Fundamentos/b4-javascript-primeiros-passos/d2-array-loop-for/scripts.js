@@ -1,3 +1,4 @@
+//Exercicios do Corse!
 /* let taskList = ['Tomar café','Reunião','Brincar com o cachorro'];
 let searchForFirstTask = taskList[0];
 let searchForLastTask = taskList[taskList.length -1];
@@ -58,10 +59,71 @@ for(let sum of arrOfNumbers){
     sum +=1;
     console.log(sum);
 } */
-let names = ['João','Maria','Antônio','Margarida'];
+/* let names = ['João','Maria','Antônio','Margarida'];
 for(let name of names){
     console.log(`Olá, ${name}!`);
-}
+} */
 
 /* let firstNumber =Math.floor(Math.random()*60) +1; */
 
+//Exercicio 1
+// let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+//Percorrer o array imprimindo cada elemento
+// for(let i=0;i<numbers.length;i+=1){
+//     console.log(numbers[i]);
+// }
+//Exercicio 2
+//Somar todo o array e imprimir o resultado
+// let soma = 0;
+// let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+// for(let i=0;i<numbers.length;i+=1){
+//     soma += numbers[i];
+// }
+// console.log(`A soma dos números do array numbers é:  ${soma}`);
+//Exercicio 3
+// let soma = 0;
+// let mediaAritmetica = 0;
+// let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+// for(let i=0;i<numbers.length; i+=1){
+//     soma+=numbers[i];
+// }
+// mediaAritmetica = (soma/numbers.length);
+// console.log(`A média aritmética dos números contidos no array é: ${mediaAritimetica}`);
+//Exercicio 4
+// let soma = 0;
+// let mediaAritmetica = 0;
+// let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+// for(let i=0;i<numbers.length; i+=1){
+//     soma+=numbers[i];
+// }
+// mediaAritmetica = (soma/numbers.length);
+// if(mediaAritmetica > 20){
+//     console.log(`A média aritmética (${mediaAritmetica}) é maior que 20`);
+// }else {
+//     console.log(`A média aritmética (${mediaAritmetica}) é menor que 20`);
+// }
+//Exercicio 5
+// let maiorNumero = 0;
+// let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+// for(let i=0;i<numbers.length;i+=1){
+//     if(maiorNumero<numbers[i]){
+//         maiorNumero = numbers[i];
+//     }
+// }
+// console.log(`O maior número desse array é: ${maiorNumero}`);
+//Exercicio 6
+// let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+// for(let i=0;i<numbers.length;i+=1){
+//     if(numbers[i]%2==1){
+//         console.log(numbers[i]);
+//     }
+// }
+//Exercicio 7
+let smallerNumber = 999;
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+for(let i=0;i<numbers.length;i+=1){
+    if(numbers[i]<smallerNumber){
+        smallerNumber = numbers[i];
+    }
+}
+console.log(`The smaller number of this array is: ${smallerNumber}`);
