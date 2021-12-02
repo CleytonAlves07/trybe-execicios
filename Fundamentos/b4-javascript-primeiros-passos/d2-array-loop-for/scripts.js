@@ -140,4 +140,14 @@ for(let i=0;i<numbers.length;i+=1){
     splitFor2 = (numbers[i]/2);
     console.log(splitFor2);
 }
+//Exercise Bonus 1
+let diasDaSemana = {
+    1: 'domingo',
+    2: 'segunda',
+    3: 'terça',
+    4: 'quarta',
+    5: 'quinta',
+    6: 'sexta',
+    7: 'sábado',
+};
 
