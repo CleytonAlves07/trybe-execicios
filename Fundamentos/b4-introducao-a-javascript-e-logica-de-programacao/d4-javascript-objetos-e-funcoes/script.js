@@ -119,3 +119,60 @@ console.log(diasDaSemana['1']); */
 // }
 // console.log(maiorNum(9**3,12**2));
 
+// Exercise Course - Part 1 - Object and For/In
+let info = [
+{
+    personagem: 'Margarida',
+    origem: 'Pato Donald',
+    nota:'Namorada do personagem principal nos quadrinhos do Pato Donald',
+    recorrente: 'Sim'
+},
+{
+    personagem: 'Tio Patinhas',
+    origem: "Christmas on Bear Mountain, Dell's Four Color Comics #178",
+    nota: 'último MacPatinhas',
+    recorrente: 'Sim'
+}
+];
+//Print Welcome, Margarida
+// console.log(`Welcome, ${info.personagem}!`);
+// Insert new object 'recorrente' and value 'sim' and print all object
+// console.log(info);
+//Do a for/in that show all keys of the object.
+// for(key in info){
+//     console.log(key);
+// }
+//Do a new for/in tha show all values of the object
+// for(key in info){
+//     console.log(info[key]);
+// }
+// Include Tio Patinhas and print together Margarida
+// let margarida = info[0];
+// let patinhas = info[1];
+// console.log(`${margarida['personagem']} e `);
+// console.log(`${patinhas['personagem']}`);
+// console.log(`${margarida['origem']} e`);
+// console.log(`${patinhas['origem']}`);
+// console.log(`${margarida['nota']} e `);
+// console.log(`${patinhas['nota']}`);
+// console.log(`${margarida['recorrente']} e `);
+// console.log(`${patinhas['recorrente']}`);
+
+// New object 
+let leitor = {
+    nome: 'Julia',
+    sobrenome: 'Pessoa',
+    idade: 21,
+    livrosFavoritos: [
+        {
+            titulo: 'O Pior Dia de Todos',
+            autor: 'Daniela Kopsch',
+            editora: 'Tordesilhas',
+        },
+    ],
+};
+// Acess the keys nome, sobrenome e titulo and print ...
+let favoritos = leitor['livrosFavoritos'];
+console.log(`O livro favorito de ${leitor.nome} ${leitor.sobrenome} se chama ${favoritos.['titulo']} `);
+
+
