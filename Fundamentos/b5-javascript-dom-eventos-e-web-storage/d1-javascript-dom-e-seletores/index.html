@@ -43,23 +43,33 @@
     </main>
     <script>
         //1
-        document.getElementsByTagName('p')[0].innerText = "Eu me vejo trabalhando em Fron-End em uma empresa do exterior";
+        function changeP(){
+          document.getElementsByTagName('p')[0].innerText = "Eu me vejo trabalhando em Fron-End em uma empresa do exterior";
+        }console.log(changeP());
         //2
+        function changeColor(){
         let contentGreen = document.querySelector('.main-content');
         contentGreen.style.backgroundColor = 'rgb(76,164,109)';
+      }console.log(changeColor());
         //3
+        function changeCenter(){
         let contentCenter = document.querySelector('.center-content');
         contentCenter.style.backgroundColor = "white";
+        }console.log(changeCenter());
         //4
+        function changeText(){
         let upperCase = document.querySelectorAll('.center-content p');
         for(let i = 0;i< upperCase.length; i += 1){
         upperCase[i].style.textTransform = 'uppercase';
         }
+      }console.log(changeText());
         //5
+        function showP(){
         let showTagP = document.querySelectorAll('.center-content p');
         for(let i=0; i<showTagP.length; i += 1){
             console.log(showTagP[i].innerText);
         }
+      }console.log(showP());
 
         /*
         Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
