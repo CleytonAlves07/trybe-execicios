@@ -99,7 +99,6 @@
           'oito',
           'nove',
           'dez'
-
         ];
         let addUl = document.createElement('ul');
         addUl.className = 'ul-section';
@@ -110,6 +109,18 @@
           let addLi = document.createElement('li');
           addLi.innerText = numbers;
           addUl.appendChild(addLi);
+        }
+        //Item 9
+        let addH3 = [
+          'Esse é o primeiro H3!',
+          'Olá eu sou o segundo H3 eu tenho certeza que você está feliz em me ver aqui!',
+          'Eu sou o terceiro H3 e estou aqui para lembrar que tem mais conteúdo para estudar, então Mooooovee!'
+        ]
+        for(let i=0; i<addH3.length; i += 1){
+          let addingH3 = addH3[i];
+          let phrases = document.createElement('h3');
+          phrases.innerText = addingH3;
+          addMain.appendChild(phrases);
         }
     </script>
   </body>
