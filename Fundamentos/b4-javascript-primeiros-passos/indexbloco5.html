@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <header>
+        <h2 id="page-title">Título</h2>
+        <p id="paragraph" class="paragrafos" >Dê uma cor para este parágrafo!</p>
+        <h4 id="subtitle">Subtítulo</h4>
+        <p id="second-paragraph" class="paragrafos" >Segundo parágrafo</p>
+    </header>
+    <script>
+        const paragraph = document.getElementById('paragraph');
+        paragraph.style.color = 'red';
+        
+        document.getElementById('page-title').innerText = "Meu filme favorito é Venom";
+
+        document.getElementById('second-paragraph').innerText = "Aprendendo a função getElementById";
+
+        document.getElementById('subtitle').innerText = "Agora recupere o segundo parágrafo e use sua criatividade para alterá-lo."
+
+        const paragrafoss = document.getElementsByClassName('paragrafos')[0];
+        paragrafoss.style.color = 'green';
+
+        const sub = document.getElementsByTagName('h2')[0];
+        sub.style.color = 'gold';
+
+    </script>
+</body>
+</html>

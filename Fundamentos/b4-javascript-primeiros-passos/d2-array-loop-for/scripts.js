@@ -141,6 +141,8 @@ for(let i=0;i<numbers.length;i+=1){
     console.log(splitFor2);
 }
 //Exercise Bonus 1
+exercicios/4.4
+
 let diasDaSemana = {
     1: 'domingo',
     2: 'segunda',
@@ -151,3 +153,4 @@ let diasDaSemana = {
     7: 'sábado',
 };
 
+main
