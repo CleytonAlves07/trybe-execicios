@@ -88,9 +88,43 @@
         addImage.className = 'small-image';
         sectionLeft.appendChild(addImage);
         // Item 8
+        exercicios/5.2
+        let numbersInFull = [
+          'um',
+          'dois',
+          'três',
+          'quatro',
+          'cinco',
+          'seis',
+          'sete',
+          'oito',
+          'nove',
+          'dez'
+        ];
+
+        main
         let addUl = document.createElement('ul');
         addUl.className = 'ul-section';
         sectionRight.appendChild(addUl);
+
+        exercicios/5.2
+        for(let i=0; i<numbersInFull.length; i += 1){
+          let numbers = numbersInFull[i];
+          let addLi = document.createElement('li');
+          addLi.innerText = numbers;
+          addUl.appendChild(addLi);
+        }
+        //Item 9
+        let addH3 = [
+          'Esse é o primeiro H3!',
+          'Olá eu sou o segundo H3 eu tenho certeza que você está feliz em me ver aqui!',
+          'Eu sou o terceiro H3 e estou aqui para lembrar que tem mais conteúdo para estudar, então Mooooovee!'
+        ]
+        for(let i=0; i<addH3.length; i += 1){
+          let addingH3 = addH3[i];
+          let phrases = document.createElement('h3');
+          phrases.innerText = addingH3;
+          addMain.appendChild(phrases);
 
         let addLi = document.createElement('li');
         addLi.innerText = 'Um';
@@ -102,6 +136,7 @@
 
         let addLi3 = document.crea
         
+     main
     </script>
   </body>
 </html>
