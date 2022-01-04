@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Cadastro de currículo</title>
+</head>
+<body>
+    <form action="" method="get">
+        <fieldset>
+            <legend>Informações básicas</legend>
+            <label for="input-nome"> Nome: 
+                  <br>
+                  <input type="text" name="nome" id="input-nome" placeholder="Digite seu nome" required maxlength="40">
+            </label>
+            <br><br>
+            <label for="input-email"> Email:
+                  <br>
+                  <input type="text" name="email" id="input-email" placeholder="Digite seu email" required maxlength="50">
+              </label>
+              <br><br>
+              <label for="input-cpf">CPF:
+                  <br>
+                  <input type="text" name="cpf" id="input-cpf" placeholder="Digite seu cpf" required maxlength="11" >
+              </label>
+              <br><br>
+              <label for="input-end">Endereço:
+                <br>
+                <input type="text" name="endereco" id="input-end" placeholder="Digite seu endereço" required maxlength="28">
+              </label>
+              <br><br>
+              <label for="state">Estado
+                  <br>
+                  <select name="state" id="state" required>
+                    <option disabled selected >Informe seu Estado</option>
+                  </select>
+                  <br>
+              </label>
+              <p>Tipo de moradia:</p>
+              <label for="tipoCasa">
+                <input type="radio" name="tipoCasa" id="tipoCasa" required>Casa
+              </label>
+              <label for="tipoApartamento">
+                <input type="radio" name="tipoCasa" id="tipoApartamento" required>Apartamento
+              </label>
+          </fieldset>
+          <fieldset>
+              <legend>Informações adicionais</legend>
+              <br>
+              <label for="lastJob">Último emprego:
+                  <br>
+                  <textarea name="lastJob" id="lastJob" cols="30" rows="10" required maxlength="1000" placeholder="Descreva suas atividades no seu último trabalho."></textarea>
+              </label>
+              <br><br>
+              <label for="cargo">Cargo:
+                <br>
+                <input type="text" name="cargo" id="cargo" required maxlength="40">
+              </label>
+              <br><br>
+              <label for="descricaoCargo">Descrição do cargo:
+                <br>
+                <input type="text" name="descricaoCargo" id="descricaoCargo" required maxlength="500">
+              </label>
+              <br><br>
+              <label for="dataInicio">Data de início:
+                  <br>
+                  <input type="text" name="dataInicio" id="dataInicio" required>
+              </label>
+          </fieldset>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
