@@ -9,5 +9,13 @@ function addState(){
         selectState.appendChild(option);
     }
 }
-window.onload = addState();
+window.onload = function(){
+    addState();
+    let buttonEnviar = document.getElementById('enviar');
+    buttonEnviar.addEventListener('click', addSubmit );
+
+    let buttonLimpar = document.getElementById('limpar');
+    buttonLimpar.addEventListener('click', clearAll );
+} 
+
 
