@@ -12,19 +12,28 @@
 //   test(true);
 
 
-const oddsAndEvens = [13, 3, 4, 10, 7, 2];
-const orderNumbers = () => {
-  oddsAndEvens[0] = 2;
-  oddsAndEvens[1] = 3;
-  oddsAndEvens[2] = 4;
-  oddsAndEvens[3] = 7;
-  oddsAndEvens[4] = 10;
-  oddsAndEvens[5] = 13;
+// const oddsAndEvens = [13, 3, 4, 10, 7, 2];
+// const orderNumbers = () => {
+//   oddsAndEvens[0] = 2;
+//   oddsAndEvens[1] = 3;
+//   oddsAndEvens[2] = 4;
+//   oddsAndEvens[3] = 7;
+//   oddsAndEvens[4] = 10;
+//   oddsAndEvens[5] = 13;
 
-  return oddsAndEvens;
+//   return oddsAndEvens;
+// }
+
+
+
+// const sortedNumbers = orderNumbers(); //😉
+// console.log(`Os números ${sortedNumbers} estão em ordem crescente!`);
+
+let fatorialNumber = (number) => {
+  let count = 1;
+  for(let i = 2;i <= number; i += 1){
+    count *= i;  
+  }
+  return count;
 }
-
-
-
-const sortedNumbers = orderNumbers(); //😉
-console.log(`Os números ${sortedNumbers} estão em ordem crescente!`);
+console.log(fatorialNumber(6));
