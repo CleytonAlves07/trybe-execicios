@@ -249,18 +249,37 @@
 
 // console.log(countryGreeting('Cleyton'));
 
-const newEmployees = (ids) => {
-  const employees = {
-    id1: ids('Pedro Guerra'), 
-    id2: ids('Luiza Drumond'), 
-    id3: ids('Carla Paiva'), 
-  }
-  return employees;
-};
+// const newEmployees = (ids) => {
+//   const employees = {
+//     id1: ids('Pedro Guerra'), 
+//     id2: ids('Luiza Drumond'), 
+//     id3: ids('Carla Paiva'), 
+//   }
+//   return employees;
+// };
 
-const workerGenerator = name => {
-  const email = name.toLowerCase().split(' ').join('');
-  return {name, email: `${email}@trybe.com`};
+// const workerGenerator = name => {
+//   const email = name.toLowerCase().split(' ').join('');
+//   return {name, email: `${email}@trybe.com`};
+// }
+
+// console.log(newEmployees(workerGenerator));
+
+//Generator number
+const testNumber = (myNumber, number) => myNumber === number;
+const randomNumber = (myNumber, result) => {
+  const numberRandom = Math.floor(Math.random() * 5) + 1;
+  return result(myNumber, numberRandom) ? 'Parabéns você ganhou' : 'Tente novamente';
 }
+console.log(randomNumber(5, testNumber));
 
-console.log(newEmployees(workerGenerator));
+
+
+
+//const someGreeting = greeting => name => `Olá, ${name}! ${greeting}`;
+
+// const loveGreeting = someGreeting('Bonitão do meu coração');
+// const manoGreeting = someGreeting('firmeza, mano?');
+// const countryGreeting = someGreeting('cê tá bão?');
+
+// console.log(countryGreeting('Cleyton'));
