@@ -248,3 +248,19 @@
 // const countryGreeting = someGreeting('cê tá bão?');
 
 // console.log(countryGreeting('Cleyton'));
+
+const newEmployees = (ids) => {
+  const employees = {
+    id1: ids('Pedro Guerra'), 
+    id2: ids('Luiza Drumond'), 
+    id3: ids('Carla Paiva'), 
+  }
+  return employees;
+};
+
+const workerGenerator = name => {
+  const email = name.toLowerCase().split(' ').join('');
+  return {name, email: `${email}@trybe.com`};
+}
+
+console.log(newEmployees(workerGenerator));
