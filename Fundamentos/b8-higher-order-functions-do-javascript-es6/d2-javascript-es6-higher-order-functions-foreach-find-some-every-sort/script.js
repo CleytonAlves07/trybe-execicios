@@ -1,3 +1,79 @@
+// const getMultiplier = multiplier => aNumber => multiplier * aNumber;
+// const randomNumber = getMultiplier(Math.floor(Math.random() * 1000 )+1);
+// console.log(randomNumber(2));
+//Arrow function 
+// const getMultiplier = multiplier => aNumber => aNumber * multiplier;
+//Function simple
+// function getMultiplier (multiplier) {
+//   return (aNumber) => {
+//     return aNumber * multiplier;
+//   }
+// }
+// const double = getMultiplier(2);
+// const triple = getMultiplier(3);
+// const quadruple = getMultiplier(4);
+
+// console.log(triple(12));
+
+// const someGreeting = greeting => name => `Olá, ${name}! ${greeting}`;
+
+// const loveGreeting = someGreeting('Bonitão do meu coração');
+// const manoGreeting = someGreeting('firmeza, mano?');
+// const countryGreeting = someGreeting('cê tá bão?');
+
+
+// console.log(vovoGreeting('Rafael'));
+
+
+//Exercise 1
+// const newEmployees = (ids) => {
+//   const employees = {
+//     id1: ids('Pedro Guerra'), 
+//     id2: ids('Luiza Drumond'), 
+//     id3: ids('Carla Paiva'), 
+//   }
+//   return employees;
+// };
+
+// const workerGenerator = name => {
+//   const email = name.toLowerCase().split(' ').join('');
+//   return {name, email: `${email}@trybe.com`};
+// }
+
+// console.log(newEmployees(workerGenerator));
+
+//Exercise 2
+// const testNumber = (myNumber, number) => myNumber === number;
+// const randomNumber = (myNumber, result) => {
+//   const numberRandom = Math.floor(Math.random() * 5) + 1;
+//   return result(myNumber, numberRandom) ? 'Parabéns você ganhou' : 'Tente novamente';
+// }
+// console.log(randomNumber(5, testNumber));,
+
+//Exercise 3 
+
+// const RIGHT_ANSWERS = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
+// const STUDENT_ANSWERS = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
+// const compareAnswers = (rightAnswer, studentAnswer) => {
+//   if (rightAnswer === studentAnswer) {
+//     return 1;
+//   } if (studentAnswer === 'N.A') {
+//     return 0;
+//   }
+//   return -0.5;
+// };
+
+// const countPoints = (rightAnswers, studentAnswers, action) => {
+//   let contador = 0;
+//   for (let index = 0; index < rightAnswers.length; index += 1) {
+//     const actionReturn = action(rightAnswers[index], studentAnswers[index]);
+//     contador += actionReturn;
+//   }
+//   return `Resultado final: ${contador} pontos`;
+// };
+
+// console.log(countPoints(RIGHT_ANSWERS, STUDENT_ANSWERS, compareAnswers));
+
 // const arrayOfValues = ['josé', 50, 0.25, { comida: 'Chocolate' }];
 // arrayOfValues.forEach((element, indexOfTheArray, theEntireArray) => {
 //   console.log('Cada elemento do array:', element);
@@ -159,3 +235,4 @@
 // people.sort((a, b) => b.age - a.age);
 
 // console.log(people);
+
