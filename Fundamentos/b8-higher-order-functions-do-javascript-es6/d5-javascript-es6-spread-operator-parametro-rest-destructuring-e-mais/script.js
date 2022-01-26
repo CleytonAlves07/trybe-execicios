@@ -288,3 +288,10 @@
 // const getPosition = (latitude, longitude) => ({latitude,longitude,});
   
 //   console.log(getPosition(-19.8157, -43.9542));
+
+// const greeting = (user) => console.log((`Welcome ${user}!`));
+// const greeting = (user => {
+//     const userDisplay = typeof user  === 'undefined' ? 'usuário' : user ;
+//     console.log(`Welcome, ${userDisplay} !`);
+// });
+// greeting();
