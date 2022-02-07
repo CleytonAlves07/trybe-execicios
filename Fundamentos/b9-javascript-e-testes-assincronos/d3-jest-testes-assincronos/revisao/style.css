@@ -33,7 +33,7 @@ img {
     border-radius: 30px;
     width: 250px;
     position: absolute;
-    margin: 75px 42%;
+    margin: 90px 40%;
     box-shadow: 0 10px 10px;
 }
 
@@ -43,9 +43,9 @@ img {
     font-weight: 500;
     font-style: italic;
     position: absolute;
-    top: 88%;
-    left: 45%;
-    color: white;
+    top: 80%;
+    left: 42%;
+    color: teal;
     border-radius: 10px;
     padding: 5px;
 }
