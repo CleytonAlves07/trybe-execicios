@@ -7,7 +7,7 @@ class UserProfile extends React.Component {
             <div>
                 <p>{this.props.user.name}</p>
                 <p>{this.props.user.email}</p>
-                <Image source={this.props.user.avatar} alternativeText={"User avatar"}/>
+                <Image className='img' source={this.props.user.avatar} alternativeText={"User avatar"}/>
             </div>
         );
     }

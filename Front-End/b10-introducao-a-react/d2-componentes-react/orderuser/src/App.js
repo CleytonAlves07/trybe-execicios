@@ -1,6 +1,6 @@
-import Order from './Order';
-import './App.css';
 import React from 'react';
+import './App.css';
+import Order from './Order';
 
 class App extends React.Component {
   render() {
@@ -23,11 +23,12 @@ class App extends React.Component {
         currency: "dollars"
       }
     };
+
     return (
       <div className="App">
-        <h1> Orders recently created</h1>
-        <Order order={headphone}/>
-        <Order order={energyDrink}/>
+        <h1> Orders recently created </h1>
+         <Order order={headphone}/>
+         <Order order={energyDrink} />
       </div>
     );
   }
