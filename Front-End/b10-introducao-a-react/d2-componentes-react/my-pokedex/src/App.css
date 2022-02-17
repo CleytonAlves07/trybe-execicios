@@ -4,7 +4,7 @@ body {
   font-size: large;
   font-weight: 700;
   color: teal;
-  background-image: url(/src/fundo3pokemon.jpg);
+  background-image: url(/src/Components/fundo3pokemon.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -55,8 +55,4 @@ h1 {
   margin: auto;
 }
 
-.image:hover {
-  left: 10px;
-  transition: all 1s ease-in-out;
-}
 

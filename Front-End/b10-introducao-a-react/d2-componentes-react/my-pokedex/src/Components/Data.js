@@ -16,6 +16,7 @@ class pokemons extends Component {
         </div>
 
         <div className='peso'>
+          <p>Peso:</p>
           <p> {this.props.pokemon.averageWeight.value} {this.props.pokemon.averageWeight.measurementUnit}</p>
         </div>
 
