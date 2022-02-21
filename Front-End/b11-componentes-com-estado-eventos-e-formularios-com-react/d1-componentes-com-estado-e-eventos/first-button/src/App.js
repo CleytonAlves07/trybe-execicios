@@ -10,7 +10,11 @@ function handleClick3() {
 }
 
 export default class App extends React.Component {
+  constructor() {
+    super()
 
+    this.handleClick = this.handleClick.bind(this);
+  }
   handleClick() {
     console.log(this);
     console.log("Clicou no botão 1!");
