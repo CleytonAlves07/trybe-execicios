@@ -9,18 +9,20 @@ export default class Forms extends Component {
     this.handleSelect = this.handleSelect.bind(this);
     this.handleEmail = this.handleEmail.bind(this);
     this.handleNumber = this.handleNumber.bind(this);
+    this.handleDate = this.handleDate.bind(this);
 
     this.state = {
         estadoFavorito: '',
         value: "nordeste",
         email: '',
         number: 0,
+        date: '',
     };
   }
 
   handleChange(e) {
       this.setState ({
-          estadoFavorito: e.target.value,
+        estadoFavorito: e.target.value,
       });
   }
   handleSelect(e) {
@@ -30,12 +32,17 @@ export default class Forms extends Component {
   }
   handleEmail(e) {
       this.setState ({
-          email: e.target.value,
+        email: e.target.value,
       });
   }
   handleNumber(e) {
       this.setState ({
-          number: e.target.value,
+        number: e.target.value,
+      })
+  }
+  handleDate(e) {
+      this.setState ({
+        date: e.target.value,
       })
   }
   render() {
@@ -57,6 +64,7 @@ export default class Forms extends Component {
         </select>
         <input type="email" name="email" value={this.state.email} onChange={this.handleEmail} />
         <input type="number" name="number" value={this.state.number} onChange={this.handleNumber} />
+        <input type='date' name='date' value={this.state.date} onChange={this.handleDate} />
       </form>
       </>
     );
