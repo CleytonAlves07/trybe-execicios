@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import EstadoFavorito from './EstadoFavorito';
 
 export default class Forms extends Component {
   constructor(props) {
@@ -29,14 +30,7 @@ export default class Forms extends Component {
       <>
       <h1>React e você!</h1>
       <form>
-          <fieldset>
-              <legend>Só para testar</legend>
-            <label>
-                <h4>Descreva em poucas palavras sua experiência com o React</h4>
-                <textarea name="estadoFavorito" value={this.state.estadoFavorito} onChange={this.handleChange} />
-                <br/>
-            </label>
-          </fieldset>
+          <EstadoFavorito />
           <label>Informe sua Região</label>
           <br/>
         <select value={this.state.value} onChange={this.handleChange}>
