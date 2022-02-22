@@ -59,12 +59,13 @@ export default class Forms extends Component {
           <option value="norte">Norte</option>
           <option value="nordeste">Nordeste</option>
           <option value="sul">Sul</option>
-          <option value="sudeste">sudeste</option>
+          <option value="sudeste">Sudeste</option>
           <option value="centro-oeste">Centro-Oeste</option>
         </select>
         <input type="email" name="email" value={this.state.email} onChange={this.handleEmail} />
         <input type="number" name="number" value={this.state.number} onChange={this.handleNumber} />
         <input type='date' name='date' value={this.state.date} onChange={this.handleDate} />
+        <input type='submit' value="Enviar" />
       </form>
       </>
     );
