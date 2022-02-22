@@ -10,7 +10,7 @@ export default class Forms extends Component {
     this.handleEmail = this.handleEmail.bind(this);
     this.handleNumber = this.handleNumber.bind(this);
     this.handleDate = this.handleDate.bind(this);
-    this.handleCheckbox = this.handleCheckbox(this);
+    // this.handleCheckbox = this.handleCheckbox(this);
 
     this.state = {
         estadoFavorito: '',
@@ -18,7 +18,7 @@ export default class Forms extends Component {
         email: '',
         number: 0,
         date: '',
-        gostou: '',
+        checkbox: false,
     };
   }
 
@@ -47,11 +47,11 @@ export default class Forms extends Component {
         date: e.target.value,
       })
   }
-  handleCheckbox(e) {
-    this.setState ({
-        gostou: e.target.value,
-    });
-  }
+//   handleCheckbox(e) {
+//     this.setState ({
+//         checkbox: e.target.checked,
+//     });
+//   }
   render() {
     return (
       <>
