@@ -7,10 +7,12 @@ export default class Forms extends Component {
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSelect = this.handleSelect.bind(this);
+    this.handleEmail = this.handleEmail.bind(this);
 
     this.state = {
         estadoFavorito: '',
         value: "nordeste",
+        email: '',
     };
   }
 
@@ -22,6 +24,11 @@ export default class Forms extends Component {
   handleSelect(e) {
       this.setState ({
           value: e.target.value,
+      });
+  }
+  handleEmail(e) {
+      this.setState ({
+          email: e.target.value,
       });
   }
   render() {
@@ -41,6 +48,7 @@ export default class Forms extends Component {
           <option value="sudeste">sudeste</option>
           <option value="centro-oeste">Centro-Oeste</option>
         </select>
+        <input type="email" name="email" value={this.state.email} onChange={this.handleEmail} />
       </form>
       </>
     );
