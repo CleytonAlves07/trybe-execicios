@@ -1,0 +1,58 @@
+body {
+  text-align: center;
+  font-family: monospace;
+  font-size: large;
+  font-weight: 700;
+  color: teal;
+  background-image: url(/src/Components/fundo3pokemon.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  position: relative;
+  top: -22px;
+  padding: 8px;
+  background-color: rgba(0, 0, 139, 0.9);
+  border: 1px yellow solid;
+  color: rgba(255, 0, 0, 0.7);
+}
+
+.tudo {
+  width: 80%;
+  position: relative;
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.poke {
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 5px 10px 10px black;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px red solid;
+  position: relative;
+  margin: 10px;
+  display: flex;
+}
+
+.poke:hover {
+  top: -10px;
+  background-color: rgba(255, 255, 255, 1);
+  color: red;
+  transition: all 1s ease-in-out;
+}
+
+.text {
+  position: relative;
+  left: 10px;
+}
+
+.image {
+  position: relative;
+  margin: auto;
+}
+
+
