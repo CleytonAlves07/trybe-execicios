@@ -29,11 +29,14 @@ export default class Forms extends Component {
       <>
       <h1>React e você!</h1>
       <form>
-          <label>
-            <h4>Descreva em poucas palavras sua experiência com o React</h4>
-            <textarea name="estadoFavorito" value={this.state.estadoFavorito} onChange={this.handleChange} />
-            <br/>
-          </label>
+          <fieldset>
+              <legend>Só para testar</legend>
+            <label>
+                <h4>Descreva em poucas palavras sua experiência com o React</h4>
+                <textarea name="estadoFavorito" value={this.state.estadoFavorito} onChange={this.handleChange} />
+                <br/>
+            </label>
+          </fieldset>
           <label>Informe sua Região</label>
           <br/>
         <select value={this.state.value} onChange={this.handleChange}>
@@ -52,6 +55,7 @@ export default class Forms extends Component {
         <br/>
         <input type='checkbox' name='checkbox' value={this.state.checkbox} onChange={this.handleChange} />
         <br/>
+        <input type="file" />
         <input type='submit' value="Enviar" />
       </form>
       </>
