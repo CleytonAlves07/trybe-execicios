@@ -33,7 +33,14 @@ export default class Forms extends Component {
             <h4>Descreva em poucas palavras sua experiência com o React</h4>
             <textarea name="estadoFavorito" value={this.state.estadoFavorito} onChange={this.handleChange} />
           </label>
-        
+          <label>Informe sua Região</label>
+        <select value={this.state.value} onChange={this.handleSelect}>
+          <option value="norte">Norte</option>
+          <option value="nordeste">Nordeste</option>
+          <option value="sul">Sul</option>
+          <option value="sudeste">sudeste</option>
+          <option value="centro-oeste">Centro-Oeste</option>
+        </select>
       </form>
       </>
     );
