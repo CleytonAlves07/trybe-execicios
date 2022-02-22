@@ -30,7 +30,7 @@ export default class Forms extends Component {
       <>
       <h1>React e você!</h1>
       <form>
-          <EstadoFavorito />
+          <EstadoFavorito value={this.state.estadoFavorito} />
           <label>Informe sua Região</label>
           <br/>
         <select value={this.state.value} onChange={this.handleChange}>
