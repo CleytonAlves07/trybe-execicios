@@ -10,6 +10,7 @@ export default class Forms extends Component {
     this.handleEmail = this.handleEmail.bind(this);
     this.handleNumber = this.handleNumber.bind(this);
     this.handleDate = this.handleDate.bind(this);
+    this.handleCheckbox = this.handleCheckbox(this);
 
     this.state = {
         estadoFavorito: '',
@@ -17,6 +18,7 @@ export default class Forms extends Component {
         email: '',
         number: 0,
         date: '',
+        gostou: '',
     };
   }
 
@@ -45,6 +47,11 @@ export default class Forms extends Component {
         date: e.target.value,
       })
   }
+  handleCheckbox(e) {
+    this.setState ({
+        gostou: e.target.value,
+    });
+  }
   render() {
     return (
       <>
@@ -65,6 +72,7 @@ export default class Forms extends Component {
         <input type="email" name="email" value={this.state.email} onChange={this.handleEmail} />
         <input type="number" name="number" value={this.state.number} onChange={this.handleNumber} />
         <input type='date' name='date' value={this.state.date} onChange={this.handleDate} />
+        <input type='checkbox' name='checkbox' value={this.state.checkbox} onChange={this.handleCheckbox} />
         <input type='submit' value="Enviar" />
       </form>
       </>
