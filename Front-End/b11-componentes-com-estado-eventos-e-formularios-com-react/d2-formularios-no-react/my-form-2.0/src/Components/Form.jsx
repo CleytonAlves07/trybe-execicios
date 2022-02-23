@@ -1,4 +1,5 @@
 import React from 'react';
+import Fullname from './Fullname';
 
 export default class Form extends React.Component {
   constructor(props) {
@@ -7,7 +8,7 @@ export default class Form extends React.Component {
     this.handleChange = this.handleChange.bind(this);
 
     this.state = {
-        name: '',
+        Fullname: '',
         email: '',
         cpf: '',
         cidade: '(AC)',
@@ -25,9 +26,7 @@ export default class Form extends React.Component {
     return(
         <>
             <fieldset>
-                <label>Name:  </label>
-                <input type="text" name="name" required placeholder="Informe seu nome" maxLength="40"/>
-
+                <Fullname value={this.state.Fullname} handleChange={this.handleChange} />
                 <label>Email:  </label>
                 <input type="email" name="email" required placeholder="Informe seu email" maxLength="50"/>
 
