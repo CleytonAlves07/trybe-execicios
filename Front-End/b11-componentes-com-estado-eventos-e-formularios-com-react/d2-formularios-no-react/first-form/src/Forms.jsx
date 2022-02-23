@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import EstadoFavorito from './EstadoFavorito';
+import Email from './Email';
+import Number from './Number';
 
 export default class Forms extends Component {
   constructor(props) {
@@ -44,9 +46,15 @@ export default class Forms extends Component {
           <option value="centro-oeste">Centro-Oeste</option>
         </select>
         <br/>
-        <input type="email" name="email" value={this.state.email} onChange={this.handleChange} />
+        <Email 
+        value={this.state.email} 
+        handleChange={this.handleChange} 
+        />
         <br/>
-        <input type="number" name="number" value={this.state.number} onChange={this.handleChange} />
+        <Number 
+        value{this.state.number} 
+        handleChange={this.handleChange}
+        />
         <br/>
         <input type='date' name='date' value={this.state.date} onChange={this.handleChange} />
         <br/>
