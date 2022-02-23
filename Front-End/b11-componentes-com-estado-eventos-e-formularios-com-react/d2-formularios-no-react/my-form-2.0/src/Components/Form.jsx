@@ -14,7 +14,7 @@ export default class Form extends React.Component {
         <input type="text" name="cpf" required placeholder="CPF" maxLength="11" />
 
         <label>Cidade:  </label>
-        <input type="text" name="cidade" required placeholder="Informe a cidade" />
+        <input type="text" name="cidade" required placeholder="Informe a cidade"  maxLength="28"/>
 
         <label>Endereço:  </label>
         <input type="text" name="endereco" required placeholder="Informe o endereço" maxLength="200" />
