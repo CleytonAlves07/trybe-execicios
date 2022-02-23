@@ -3,6 +3,7 @@ import EstadoFavorito from './EstadoFavorito';
 import Email from './Email';
 import Number from './Number';
 import Date from './Date';
+import Select from './Select';
 
 export default class Forms extends Component {
   constructor(props) {
@@ -39,13 +40,10 @@ export default class Forms extends Component {
           />
           <label>Informe sua Região</label>
           <br/>
-        <select value={this.state.value} onChange={this.handleChange}>
-          <option value="norte">Norte</option>
-          <option value="nordeste">Nordeste</option>
-          <option value="sul">Sul</option>
-          <option value="sudeste">Sudeste</option>
-          <option value="centro-oeste">Centro-Oeste</option>
-        </select>
+          <Select 
+          value={this.state.value} 
+          handleChange={this.handleChange}
+          />
         <br/>
         <Email 
         value={this.state.email} 
