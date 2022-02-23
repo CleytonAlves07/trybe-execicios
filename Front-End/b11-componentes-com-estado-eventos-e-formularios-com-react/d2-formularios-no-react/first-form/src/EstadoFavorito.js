@@ -6,7 +6,9 @@ export default class EstadoFavorito extends React.Component {
 
     let error = undefined
     if (value.length > 120) 
-        error = 'Texto muito grande'
+      error = 'Texto muito grande'
+    if (value.length <= 1)
+      error = 'Texto muito pequeno'
     return (
         <fieldset>
         <legend>Só para testar</legend>
