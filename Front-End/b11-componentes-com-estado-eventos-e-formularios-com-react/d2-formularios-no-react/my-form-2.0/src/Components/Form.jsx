@@ -2,6 +2,7 @@ import React from 'react';
 import Fullname from './Fullname';
 import Email from './Email';
 import Cpf from './Cpf';
+import Cidade from './Cidade';
 
 export default class Form extends React.Component {
   constructor(props) {
@@ -13,9 +14,9 @@ export default class Form extends React.Component {
         Fullname: '',
         email: '',
         cpf: '',
-        cidade: '(AC)',
+        cidade: '',
         endereco: '',
-        estado: '',
+        estado: '(AC)',
     }
   }
   handleChange({ target }) {
@@ -31,10 +32,7 @@ export default class Form extends React.Component {
                 <Fullname value={this.state.Fullname} handleChange={this.handleChange} />
                 <Email value={this.state.email} handleChange={this.handleChange} />
                 <Cpf value={this.state.cpf} handleChange={this.handleChange} />
-                
-
-                <label>Cidade:  </label>
-                <input type="text" name="cidade" required placeholder="Informe a cidade"  maxLength="28"/>
+                <Cidade value={this.state.cidade} handleChange={this.handleChange}/>
 
                 <label>Endereço:  </label>
                 <input type="text" name="endereco" required placeholder="Informe o endereço" maxLength="200" />
