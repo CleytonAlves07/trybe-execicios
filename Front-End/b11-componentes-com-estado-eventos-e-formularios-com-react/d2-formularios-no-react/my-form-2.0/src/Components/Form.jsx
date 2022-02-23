@@ -5,16 +5,19 @@ export default class Form extends React.Component {
     return(
         <>
         <label>Name:  </label>
-        <input type="text" name="name" required placeholder="Informe seu nome" />
+        <input type="text" name="name" required placeholder="Informe seu nome" maxLength="40"/>
 
         <label>Email:  </label>
-        <input type="email" name="email" required placeholder="Informe seu email" />
+        <input type="email" name="email" required placeholder="Informe seu email" maxLength="50"/>
 
         <label>CPF:  </label>
-        <input type="text" name="cpf" required placeholder="CPF" />
+        <input type="text" name="cpf" required placeholder="CPF" maxLength="11" />
 
         <label>Cidade:  </label>
-        <input type="text" name="cidade" required placeholder="Informa a Cidade" />
+        <input type="text" name="cidade" required placeholder="Informe a cidade" />
+
+        <label>Endereço:  </label>
+        <input type="text" name="endereco" required placeholder="Informe o endereço" maxLength="200" />
 
         <label>Estado:  </label>
         <select required>
