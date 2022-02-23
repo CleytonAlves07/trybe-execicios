@@ -1,6 +1,7 @@
 import React from 'react';
 import Fullname from './Fullname';
 import Email from './Email';
+import Cpf from './Cpf';
 
 export default class Form extends React.Component {
   constructor(props) {
@@ -29,9 +30,8 @@ export default class Form extends React.Component {
             <fieldset>
                 <Fullname value={this.state.Fullname} handleChange={this.handleChange} />
                 <Email value={this.state.email} handleChange={this.handleChange} />
-
-                <label>CPF:  </label>
-                <input type="text" name="cpf" required placeholder="CPF" maxLength="11" />
+                <Cpf value={this.state.cpf} handleChange={this.handleChange} />
+                
 
                 <label>Cidade:  </label>
                 <input type="text" name="cidade" required placeholder="Informe a cidade"  maxLength="28"/>
