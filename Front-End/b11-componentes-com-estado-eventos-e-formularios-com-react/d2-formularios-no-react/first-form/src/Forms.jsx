@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import EstadoFavorito from './EstadoFavorito';
 import Email from './Email';
 import Number from './Number';
+import Date from './Date';
 
 export default class Forms extends Component {
   constructor(props) {
@@ -52,11 +53,14 @@ export default class Forms extends Component {
         />
         <br/>
         <Number 
-        value{this.state.number} 
+        value={this.state.number} 
         handleChange={this.handleChange}
         />
         <br/>
-        <input type='date' name='date' value={this.state.date} onChange={this.handleChange} />
+        <Date 
+        value={this.state.date} 
+        handleChange={this.handleChange}
+        />
         <br/>
         <input type='checkbox' name='checkbox' value={this.state.checkbox} onChange={this.handleChange} />
         <br/>
