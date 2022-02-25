@@ -6,7 +6,7 @@ export default class Fullname extends React.Component {
     return (
       <>
         <label>Name:  </label>
-        <input type="text" name="Fullname" required placeholder="Informe seu nome" maxLength="40" value={value} onChange={handleChange}/>
+        <input type="text" name="name" required placeholder="Informe seu nome" maxLength="40" value={value} onChange={handleChange} />
       </>
     );
   }
