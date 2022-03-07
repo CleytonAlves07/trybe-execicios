@@ -12,7 +12,7 @@ export default class Timer extends React.Component {
 
     componentDidMount() {
       const oneSecond = 1000;
-      setInterval(() => {
+      this.setIntervalId = setInterval(() => {
           this.setState((prevState) => ({
               seconds: prevState.seconds + 1
           }))
@@ -27,6 +27,10 @@ export default class Timer extends React.Component {
               phasesIndex: prevState.phasesIndex === 2 ? 0 : prevState.phasesIndex + 1                
             })
         }
+    }
+
+    componentWillUnmount() {
+      clearInterval(this.setIntervalId);
     }
   render() {
       const { seconds, phases, phasesIndex } = this.state;
