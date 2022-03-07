@@ -18,6 +18,16 @@ export default class Timer extends React.Component {
           }))
       }, oneSecond)
     }
+
+    componentDidUpdate(_prevProps, prevState) {
+        const limitTime = 5;
+        if(prevState.seconds === limitTime) {
+            this.setState({
+              seconds: 0,
+              phasesIndex: prevState.phasesIndex === 2 ? 0 : prevState.phasesIndex + 1                
+            })
+        }
+    }
   render() {
       const { seconds, phases, phasesIndex } = this.state;
     return (
