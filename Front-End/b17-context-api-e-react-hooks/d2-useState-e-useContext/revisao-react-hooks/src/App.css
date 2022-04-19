@@ -1,0 +1,54 @@
+.dark {
+  background-color: rgba(31, 31, 31, 0.6);
+  width: 100vw;
+  height: 100vh;
+}
+
+.light {
+  background-color: rgba(0, 255, 255, 0.1);
+  width: 100vw;
+  height: 100vh;
+}
+
+.headerBox {
+  display: flex;
+  justify-content:flex-end;
+  gap: 30px;
+  padding: 20px;
+}
+
+.likeBox {
+  display: flex; 
+}
+
+.likeBtn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: large;
+  animation: loveLike 3s ease 0s infinite normal none;
+}
+
+h1 {
+  font-family: monospace;
+  font-size: large;
+}
+
+.themeBtn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: large;
+}
+
+@keyframes loveLike {
+    0.0%{
+        transform: scale(1);
+        color: red;
+    }
+    50.2%{
+        transform: scale(1.5);
+        color: red;
+    }
+}
+
