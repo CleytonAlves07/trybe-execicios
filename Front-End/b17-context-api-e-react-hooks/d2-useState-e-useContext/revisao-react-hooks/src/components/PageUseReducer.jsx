@@ -20,6 +20,7 @@ const [state, dispatch] = useReducer(reducer, { counter: 0})
 
   return (
     <div>
+      <p>Utilizando UseReducer</p>
       <p>{state.counter}</p>
       <button onClick={() => dispatch({ type: "+"})}>+</button>
       <button onClick={() => dispatch({ type: "-"})}>-</button>

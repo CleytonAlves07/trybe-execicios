@@ -1,19 +1,19 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect} from 'react';
 import { MdFavoriteBorder, MdFavorite } from "react-icons/md";
 import "./page.css"
 
 const PageUseEffect = () => {
   const [resourceType, setResourceType] = useState("posts");
   const [items, setItems] = useState([]);
-  const [favorite, setFavorite] = useState({favorite: true});
+  const [favorite, setFavorite] = useState({ favorite: true });
 
   useEffect(() => {
     const fetchResourceTypes = async () => {
+      console.log("Fui usado por dentro")
       const response = await fetch(`https://jsonplaceholder.typicode.com/${resourceType}`)
       const data = await response.json();
       return setItems(data);
     };
-  
     fetchResourceTypes();
   }, [resourceType]);
 
@@ -67,6 +67,7 @@ const PageUseEffect = () => {
               </button>
             </li>)}
         </ul>
+        
       </div>
     </div>
   )

@@ -1,4 +1,6 @@
-import { useRef, useEffect, useState } from 'react';
+import { useRef, useEffect, useState} from 'react';
+import PageUseEffect from "./PageUseEffect";
+
 
 const PageUseRef = () => {
   const [name, setName] = useState("");
@@ -20,23 +22,24 @@ const PageUseRef = () => {
   }, [name]);
 
   return (
-    <div>
-      <input
-        ref={inputRef}
-        value={info} 
-        placeholder="Email"
-        onChange={({ target }) => setInfo(target.value)}
-      />
-      <input
-        value={name}
-        placeholder="Name"
-        onChange={({ target }) => setName(target.value)}
-      />
-      <h2>Olá meu nome é : {name}</h2>
-      <h3>Nome com antes do último valor digitado... {previousName.current}</h3>
-      <h4>Esse input foi renderizado {renders.current} vezes</h4>
-      <button onClick={focusInput}>Focus Input</button>
-    </div>
+      <div>
+        <input
+          ref={inputRef}
+          value={info}
+          placeholder="Email"
+          onChange={({ target }) => setInfo(target.value)}
+        />
+        <input
+          value={name}
+          placeholder="Name"
+          onChange={({ target }) => setName(target.value)}
+        />
+        <h2>Olá meu nome é : {name}</h2>
+        <h3>Nome com antes do último valor digitado... {previousName.current}</h3>
+        <h4>Esse input foi renderizado {renders.current} vezes</h4>
+        <PageUseEffect />
+        <button onClick={focusInput}>Focus Input</button>
+      </div>
   );
 
 }

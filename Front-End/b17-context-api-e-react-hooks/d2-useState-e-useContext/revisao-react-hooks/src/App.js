@@ -1,16 +1,16 @@
 import { useState } from "react";
 import './App.css';
 import { BsHeart, BsMoonStars, BsSun } from "react-icons/bs";
-import PageUseEffect from './components/PageUseEffect';
 import PageUseRef from './components/PageUseRef';
 import PageUseReducer from './components/PageUseReducer';
 
+// import PageUseContext from './components/PageUseContext';
 
 
 const App = () => {
   const [count, setCount] = useState(0);
   const [theme, setTheme] = useState({theme: "light"});
-
+  
   const incrementCount = () => {
     setCount((prevState) =>  prevState + 1);
   };
@@ -25,11 +25,10 @@ const App = () => {
   // const decrementCount = () => {
   //   setCount((prevState) => prevState - 1);
   // }
+
+
   return (
-    <main className={theme.theme}>
-      <aside>
-        <PageUseRef />
-      </aside>
+      <main className={theme.theme}>
         <div className='headerBox'>
            <button
             type='button'
@@ -47,11 +46,11 @@ const App = () => {
              <h1>{count}</h1>
             </div>
       {/* <button type='button' onClick={decrementCount}>-</button> */}
-        </div>
+      </div>
       <PageUseReducer />
-      <PageUseEffect />
+      <PageUseRef />
+      {/* <PageUseContext /> */}
     </main>
-    
   );
 }
 
