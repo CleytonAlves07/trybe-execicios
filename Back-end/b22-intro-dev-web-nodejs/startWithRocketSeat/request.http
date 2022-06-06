@@ -2,8 +2,8 @@ POST http://localhost:4002/products
 content-type: application/json
 
 {
-  "name": "BARBEADOR",
-  "price": 105.00
+  "name": "caneta",
+  "price": 2.00
 } 
 
 ###
