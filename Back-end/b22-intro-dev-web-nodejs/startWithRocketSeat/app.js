@@ -45,6 +45,31 @@ app.get("/products/:id", (request, response) => {
   const { id } = request.params;
   const product = products.find(product => product.id === id);
   return response.json(product);
+});
+
+app.put("/products/:id", (request, response) => {
+  const { id } = request.params;
+  const { name, price } = request.body;
+
+  const productIndex = products.findIndex((product) => product.id === id);
+  products[productIndex] = {
+    ...products[productIndex],
+    name,
+    price,
+  };
+
+  return response.json({ message: "Produto alterado com sucesso" });
+
+});
+
+app.delete("/products/:id", (request, response) => {
+  const { id } = request.params;
+
+  const productIndex = products.findIndex((product) => product.id === id);
+
+  products.splice(productIndex, 1);
+
+  return response.json({ message: "Produto removido com sucesso" });
 })
 
 app.listen(4002, () => console.log('Servidor está rodando noa porta 4002'));

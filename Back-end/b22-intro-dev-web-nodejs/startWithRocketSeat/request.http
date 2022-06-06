@@ -2,8 +2,8 @@ POST http://localhost:4002/products
 content-type: application/json
 
 {
-  "name": "Caderno do homem-aranha",
-  "price": 35.00
+  "name": "BARBEADOR",
+  "price": 105.00
 } 
 
 ###
@@ -11,4 +11,18 @@ content-type: application/json
 GET http://localhost:4002/products
 
 ###
-GET http://localhost:4002/products/049a390b-96a3-4784-8984-573a8e5a93a1
+GET http://localhost:4002/products/fae8fd16-0220-41ff-a587-5babd02d99c7
+
+###
+
+PUT http://localhost:4002/products/45d0d542-bb6d-4229-8b7d-467cc96a4c46
+content-type: application/json
+
+{
+  "name": "Caderno do homem-aranha",
+  "price": 12.00
+}
+
+###
+
+DELETE http://localhost:4002/products/0d3b7d41-059b-4379-a749-c08c84ca63ae
