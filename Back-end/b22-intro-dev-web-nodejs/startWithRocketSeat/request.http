@@ -1,0 +1,14 @@
+POST http://localhost:4002/products
+content-type: application/json
+
+{
+  "name": "Caderno do homem-aranha",
+  "price": 35.00
+} 
+
+###
+
+GET http://localhost:4002/products
+
+###
+GET http://localhost:4002/products/049a390b-96a3-4784-8984-573a8e5a93a1
