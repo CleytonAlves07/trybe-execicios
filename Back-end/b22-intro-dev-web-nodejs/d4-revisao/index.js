@@ -19,14 +19,24 @@ const fs = require('fs');
 // }
 
 // 2 Forma
-const leitura = () => {
-  try {
-  const data = fs.readFileSync('arquivo.json', 'utf8');
-  console.log(data);
-} catch (err) {
-  console.error(err);
-}
-}
+// const leitura = () => {
+//   try {
+//   const data = fs.readFileSync('arquivo.json', 'utf8');
+//   console.log(data);
+// } catch (err) {
+//   console.error(err);
+// }
+// }
 
+// 3 Forma assíncrona 
 
-leitura();
+// async function xablau() {
+//   try {
+//     const data = await fs.readFile('arquivo.json', { encoding: 'utf8' })
+//     console.log(data);
+//   } catch (err) {
+//     console.log(err);
+//   }
+// }
+
+// xablau();
