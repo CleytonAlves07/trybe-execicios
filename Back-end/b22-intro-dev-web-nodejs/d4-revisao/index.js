@@ -1,42 +1,25 @@
-// const operacoes = require('./soma');
+const express = require('express');
+const utils = require('./utils');
 
-// console.log(operacoes.soma(10, 15));
+const app = express();
 
-// console.log(operacoes.media(22, 66));
+//express.json() e bodyParser são a mesma coisa sendo o primeiro o mais atual
 
-const fs = require('fs');
+app.use(express.json());
 
-//1 Forma
+// get = buscar arquivos no server
+// post = inserir arquivos
+// put = atualizar
+// patch = atualizar partes de uma entidade
+// delete = deletar dados 
 
-// const leitura = () => {
-//   const data = fs.readFile('arquivo.json', 'utf8', (error, data) => {
-//     if (error) {
-//       console.log(error.message)
-//       return;
-//     }
-//     console.log(data);
-//   });
-// }
+app.get('/spell', async (_req, res) => {
+  try {
+    const mySpells = await utils.leitura();
+    return res.status(200).json(mySpells)
+  } catch (error) {
+    console.log(error.message)
+   }
+}); 
 
-// 2 Forma
-// const leitura = () => {
-//   try {
-//   const data = fs.readFileSync('arquivo.json', 'utf8');
-//   console.log(data);
-// } catch (err) {
-//   console.error(err);
-// }
-// }
-
-// 3 Forma assíncrona 
-
-// async function xablau() {
-//   try {
-//     const data = await fs.readFile('arquivo.json', { encoding: 'utf8' })
-//     console.log(data);
-//   } catch (err) {
-//     console.log(err);
-//   }
-// }
-
-// xablau();
+app.listen(3000, () => console.log('rodando na porta 3000')) 
