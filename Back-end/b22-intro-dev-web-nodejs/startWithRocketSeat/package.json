@@ -1,15 +1,12 @@
 {
   "name": "startwithrocketseat",
   "version": "1.0.0",
-  "description": "Primeiro projeto em Node.js",
-  "main": "index.js",
+  "description": "",
+  "main": "app.js",
   "scripts": {
-    "dev": "nodemon app.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Cleyton Alves",
-  "license": "MIT",
-  "dependencies": {
-    "express": "^4.18.1",
-    "nodemon": "^2.0.16"
-  }
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
