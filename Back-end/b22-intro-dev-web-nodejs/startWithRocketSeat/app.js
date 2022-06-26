@@ -26,7 +26,7 @@ fs.readFile("products.json", "utf-8", (err, data) => {
 // PUT => Alterar um dado
 // DELETE => Remover um dado
 
-// Body => Semrpe que eu quiser enviar dados para minha aplicação
+// Body => Sempre que eu quiser enviar dados para minha aplicação
 // Params => /product/21345646721 <= Isso é um parametro de rota
 // Query => /product?id=21314654653123134&value=123145646584
 
