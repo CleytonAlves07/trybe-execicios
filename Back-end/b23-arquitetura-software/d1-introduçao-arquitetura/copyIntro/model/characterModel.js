@@ -3,14 +3,14 @@ const connection = require('../helpers/connection');
 
 const getAll = async () => {
   const [rows] = await connection.execute(
-    'SELECT * FROM aula23_1.character'
+    'SELECT * FROM teste_B_23_1'
   );
   return rows;
 };
 
 const getById = async (id) => {
   const [rows] = await connection.execute(
-    `SELECT * FROM aula23_1.character
+    `SELECT * FROM teste_B_23_1
     WHERE id = ?`,
     [id]
   );
@@ -21,7 +21,7 @@ const add = async (name, cartoon) => {
   const [
     row,
   ] = await connection.execute(
-    'INSERT INTO aula23_1.character (name, cartoon) VALUES (?, ?)',
+    'INSERT INTO teste_B_23_1 (name, cartoon) VALUES (?, ?)',
     [name, cartoon]
   );
   const result = {
@@ -34,7 +34,7 @@ const add = async (name, cartoon) => {
 
 const update = async (id, name, cartoon) => {
   await connection.execute(
-    `UPDATE aula23_1.character 
+    `UPDATE teste_B_23_1 
       SET name = ?, cartoon = ?
       WHERE id = ?'`,
     [name, cartoon, id]
@@ -46,7 +46,7 @@ const update = async (id, name, cartoon) => {
 
 const exclude = async (id) => {
   connection.execute(
-    `DELETE FROM aula23_1.character 
+    `DELETE FROM teste_B_23_1 
     WHERE id = ?`,
     [id]
   );
